@@ -11,6 +11,16 @@
   .skills-right ul li {
     font-size: 0.9rem;
   }
+
+  .up {
+    right: 4em;
+    bottom: 4em;
+  }
+
+  .up .icon_up {
+    width: 28px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 825px) {
@@ -49,14 +59,29 @@
 
   nav ul {
     height: 100vh;
-    align-items: center;
+    align-items: normal;
     flex-direction: column;
-    justify-content: center;
+    justify-content: normal;
+    padding: 6em 0 0 2em;
+  }
+
+  nav ul li a::after {
+    transform-origin: 0 0;
+  }
+
+  nav ul li a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  nav ul .nav-icon {
+    justify-content: normal;
+    gap: 2rem;
   }
 
   .nav {
     position: none;
     background: none;
+    padding: 0;
   }
 
   .nav-active {
@@ -83,16 +108,13 @@
   /* Memet Section */
   #memet {
     grid-template-columns: 1fr;
-    height: fit-contact;
+    height: fit-content;
+    padding-top: 5rem;
   }
 
   .memet-right {
     order: -1;
-    padding: 3rem;
-  }
-
-  .memet-right img {
-    width: 70%;
+    padding-bottom: 3rem;
   }
 
   .memet-left {
@@ -120,22 +142,33 @@
     padding: 2rem 0;
   }
 
-  .languages {
-    top: 339rem;
+  .footer-icon .sosmed .icon-png {
+    width: 19px;
+    height: 19px;
   }
 }
 
-@media screen and (max-width: 640px) {
-  /* Tittle */
-  .section-title {
-    font-size: 1.3rem;
+@media screen and (max-width: 575px) {
+  .up {
+    right: 3em;
+    bottom: 3em;
+  }
+  .up .icon_up {
+    width: 24px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  nav ul {
+    padding: 6em 0 0 0.5em;
   }
 
-  .pre-title {
-    font-size: 0.7rem;
+  nav ul li a {
+    font-size: 85%;
   }
-
-  .languages {
-    top: 369.5rem;
+  .up {
+    right: 2em;
+    bottom: 2em;
   }
 }
