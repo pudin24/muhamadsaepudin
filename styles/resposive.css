@@ -172,3 +172,11 @@
     bottom: 2em;
   }
 }
+
+@media screen and (max-width: 370px) {
+  .contact-form input,
+  .contact-form textarea,
+  .btn-submit {
+    width: 95%;
+  }
+}
