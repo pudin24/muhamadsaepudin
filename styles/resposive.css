@@ -173,10 +173,10 @@
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 400px) {
   .contact-form input,
   .contact-form textarea,
   .btn-submit {
-    width: 95%;
+    width: 90%;
   }
 }
